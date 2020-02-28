@@ -1,3 +1,9 @@
 body, html, #container {
     height: 100%;
 }
+ #body {
+     color: #01ABAA;
+ }
+ #header {
+     background-image: url(https://tf2maps.net/attachments/20170811095313_1-jpg.59449/);
+ }
