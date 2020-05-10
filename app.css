@@ -7,3 +7,6 @@ body, html, #container {
  #header {
      background-image: url(https://tf2maps.net/attachments/20170811095313_1-jpg.59449/);
  }
+ #personal_photo {
+     align="middle"
+ }
