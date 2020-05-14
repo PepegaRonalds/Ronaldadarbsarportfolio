@@ -11,10 +11,6 @@ $(document).ready(function() {
     $("#body").css("background", "#1e1d1d");
     $("#body").css("width", "100%");
     $("#body").css("height", "75%");
-    
-    $("#footer").css("background", "#FEA860");
-    $("#footer").css("width", "100%");
-    $("#footer").css("height", "5%");
 
     $("#navigation_header").css("padding-top", "20px");
     $("#navigation_header").css("padding-bottom", "20px");
@@ -25,52 +21,32 @@ $(document).ready(function() {
     $("#personal_photo").css("width", "250px");
     
     $("#body_content").css("padding-top", "150px");
-    $(".magic-image").css("height", "350px")
-    $(".magic-image").css("width", "350px")
+    $(".magic-image").css("height", "350px");
+    $(".magic-image").css("width", "420px");
 
     $("#image_content").css("padding-top", "120px");
-    $("#form_content").css("padding-top", "100px");
+    $("#form_content").css("padding-top", "100px"); 
 
-    $(".#button").html("navigation_buttons","Par_Mani");
-    $(".#button").html(".navigation_buttons","Mani_darbi");
-    $(".#button").html("navigation_buttons","Kontakti")
+    $("#pog").click(function() {
+        $("#body_container").css("display", "block");
+        $("#image_container").css("display", "none");
+        $("#form_content").css("display", "none");
+    });
+    $("#mani_pog").click(function() {
+        $("#body_container").css("display", "none");
+        $("#image_container").css("display", "block");
+        $("#form_content").css("display", "none");
+    });
+    $("#big_pog").click(function() {
+        $("#body_container").css("display", "none");
+        $("#image_container").css("display", "none");
+        $("#form_content").css("display", "block");
+    });
+// kam ir paredzētas šīs programmas koda rindiņas? Ja tās tiek dzēstas vai aizkomentētas, tad javascript kods pogām strādā
 
-    $(document).ready(function() {
-        var settings = {
-            "bodyContainerDisplay":"block",
-            "imageContainerDisplay":"none",
-            "formContainerDisplay":"none",
-        };
-            $("body_container").css("display", settings.bodyContainerDisplay);
-            $("image_container").css("display", settings.imageContainerDisplay);
-            $("form_content").css("display", settings.formContainerDisplay);
-    }
+    //$(".#button").html("navigation_buttons","Par_Mani");
+    //$(".#button").html(".navigation_buttons","Mani_darbi");
+    //$(".#button").html("navigation_buttons","Kontakti")
 
-    $("#navigation_buttons p").click(function(){
-        $(this).css("color"" #f99e70 ");
-
-        var text = $(this).text();
-
-        if(text == "Par mani") {
-            $("#body_container").css("display","block");
-            $("#body_container").css("display","none");
-            $("#form_content").css("display","none");
-            $("#my_works").css("color","#f99e70");
-            $("#info").css("color","#f99e70")
-        }
-        if(text == "Mani darbi") {
-            $("#body_container").css("display","none");
-            $("#body_container").css("display","block");
-            $("#form_content").css("display","none");
-            $("#my_works").css("color","#f99e70");
-            $("#info").css("color","#f99e70")
-        }
-        if(text == "Kontakti") {
-            $("#body_container").css("display","none");
-            $("#body_container").css("display","none");
-            $("#form_content").css("display","block");
-            $("#my_works").css("color","#f99e70");
-            $("#info").css("color","#f99e70")
-        }
-    }
+     
 });
